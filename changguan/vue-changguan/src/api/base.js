@@ -1,0 +1,59 @@
+const base = {
+    // host: 'http://localhost:8081',//基础域名
+    adminList: '/api/admininfo',
+    search: '/api/searchAdmin',
+    addPerson: '/api/addAdmin',
+    deletePerson: '/api/deleteAdmin',
+    updatePerson: '/api/updateAdmin',
+    login: '/api/login',//登录接口
+
+    gridList: '/api/gridinfo',
+    searchGrid: '/api/searchGrid',
+    addGrid: '/api/addGrid',
+    deleteGrid: '/api/deleteGrid',
+    updateGrid: '/api/updateGrid',
+    getGridOptions: '/api/getGridOptions',
+
+    controlList: '/api/controlinfo',
+    searchControl: '/api/searchControl',
+    addControl: '/api/addControl',
+    deleteControl: '/api/deleteControl',
+    updateControl: '/api/updateControl',
+    getControlOptions: '/api/getControlOptions',
+
+    sceneList: '/api/sceneinfo',
+    searchScene: '/api/searchScene',
+    addScene: '/api/addScene',
+    deleteScene: '/api/deleteScene',
+    updateScene: '/api/updateScene',
+    getSceneOptions: '/api/getSceneOptions',
+
+    categoryList: '/api/category',
+    searchCategory: '/api/searchCategory',
+    addCategory: '/api/addCategory',
+    deleteCategory: '/api/deleteCategory',
+    // updateCategory: '/api/updateCategory',
+    getCategoryOptions: '/api/getCategoryOptions',
+
+    deviceList: '/api/deviceinfo',
+    searchDevice: '/api/searchDevice',
+    addDevice: '/api/addDevice',
+    deleteDevice: '/api/deleteDevice',
+    updateDevice: '/api/updateDevice',
+    // goodsList: '/api/projectList', //商品列表
+    // search: '/api/search',//商品搜索
+    // selectCategory: '/api/backend/itemCategory/selectItemCategoryByParentId',//类目选择
+    // uploadUrl: '/api/upload',//图片上传 post请求
+    // addGoods: '/api/backend/item/insertTbItem',//添加商品
+    // deleteGoods: '/api/backend/item/deleteItemById',//删除商品
+    // updateGoods: '/api/backend/item/updateTbItem',//编辑商品
+    // login: '/api/login',//登录接口
+    // params: '/api/backend/itemParam/selectItemParamAll',//规格参数列表
+    // statistical: '/api/statistical',//统计数据
+    // sellTotal: "/api/sellTotal",//统计数据
+    // orderList: "/api/order-list",//订单列表
+    // insertItemParam: "/api/backend/itemParam/insertItemParam",//规格参数配置-添加
+    // categoryData: "/api/category/data",//规格参数配置
+}
+
+export default base;

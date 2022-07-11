@@ -23,7 +23,7 @@
         <el-table-column prop="telephone" label="手机号" width="180"></el-table-column>
         <el-table-column prop="department" label="部门" width="180" show-overflow-tooltip></el-table-column>
         <el-table-column prop="post" label="职务" width="180"></el-table-column>
-        <el-table-column label="操作" width="180">
+        <el-table-column label="操作">
           <template slot-scope="scope">
             <el-button size="mini" @click="handleEdit(scope.$index, scope.row)">编辑</el-button>
             <el-button size="mini" type="danger" @click="handleDelete(scope.$index, scope.row)">删除</el-button>

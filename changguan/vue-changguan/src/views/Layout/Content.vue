@@ -1,9 +1,9 @@
 <template>
   <div>
     <div class="header">
-      <i v-if='!isCollapse' @click="changeMenu" class="iconfont icon-right-indent"></i>
-      <i v-else @click="changeMenu" class="iconfont icon-left-indent"></i>
-      <div class="header-right">
+      <i v-if='!isCollapse' @click="changeMenu" class="iconfont icon-right-indent" style="margin:20px"></i>
+      <i v-else @click="changeMenu" class="iconfont icon-left-indent" style="margin:20px"></i>
+      <div class=" header-right">
         <!-- <el-dropdown @command="clickLang">
           <span class="el-dropdown-link" style="color: #fff">
             多语言<i class="el-icon-arrow-down el-icon--right"></i>
@@ -14,9 +14,11 @@
           </el-dropdown-menu>
         </el-dropdown> -->
         <div class="user">
-          欢迎：{{ userinfo.name }}
-          <i class="iconfont icon-tuichu" @click="loginout"></i>
-          <!-- <span>退出登录</span> -->
+          <span>
+            欢迎：{{ userinfo.name }}
+          </span>
+          <i class="iconfont icon-tuichu" style="cursor:pointer" @click="loginout"></i>
+          <span @click="loginout" style="cursor:pointer">退出登录</span>
         </div>
       </div>
     </div>
@@ -59,6 +61,7 @@ export default {
 
   .iconfont {
     font-size: 24px;
+    // margin: 20px;
   }
 }
 
@@ -69,10 +72,11 @@ export default {
 
   .user {
     margin-left: 20px;
+    font-size: 15px;
 
     span {
       position: relative;
-      top: -4px;
+      top: -3px;
       margin-right: 10px;
     }
   }
